@@ -1,5 +1,5 @@
 -- FatherV6 Platinum Loader
-local scriptUrl = "https://raw.githubusercontent.com/YOUR_USERNAME/FatherV6/main/games/Bedfight.lua"
+local scriptUrl = "https://raw.githubusercontent.com/persianempireholder-oss/FatherV6/main/games/Bedfight.lua"
 local success, result = pcall(function()
     return game:HttpGet(scriptUrl)
 end)
