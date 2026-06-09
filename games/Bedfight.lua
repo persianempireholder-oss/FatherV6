@@ -1,5 +1,5 @@
 --[[
-    FatherV4 Platinum - Bedfight
+    FatherV6 Platinum - Bedfight
     Modules: KillAura, AimAssist, ESP, ProjectileAura
     Folder-based GUI with sliders. RightShift to hide.
 --]]
@@ -178,7 +178,7 @@ local function refreshESP()
     if not config.ESP.enabled then return end
 
     espFolder = Instance.new("Folder")
-    espFolder.Name = "FatherV4_ESP"
+    espFolder.Name = "FatherV6_ESP"
     pcall(function() espFolder.Parent = game.CoreGui end)
     if not espFolder.Parent then
         espFolder.Parent = player:WaitForChild("PlayerGui")
@@ -301,7 +301,7 @@ end
 -- ===== GUI: Folder-Based (Vape Style) =====
 local guiParent = pcall(function() return game.CoreGui end) and game.CoreGui or player:WaitForChild("PlayerGui")
 local screenGui = Instance.new("ScreenGui")
-screenGui.Name = "FatherV4_Platinum"
+screenGui.Name = "FatherV6_Platinum"
 screenGui.Parent = guiParent
 
 local mainFrame = Instance.new("Frame")
@@ -316,7 +316,7 @@ Instance.new("UICorner", mainFrame).CornerRadius = UDim.new(0, 8)
 
 local title = Instance.new("TextLabel", mainFrame)
 title.Size = UDim2.new(1, 0, 0, 35)
-title.Text = "FatherV4 Platinum"
+title.Text = "FatherV6 Platinum"
 title.TextColor3 = Color3.fromRGB(255, 200, 0)
 title.BackgroundTransparency = 1
 title.Font = Enum.Font.GothamBold
@@ -533,4 +533,4 @@ userInput.InputBegan:Connect(function(input, gameProcessed)
     end
 end)
 
-print("FatherV4 Platinum loaded. Click folders to adjust settings. RightShift hides GUI.")
+print("FatherV6 Platinum loaded. Click folders to adjust settings. RightShift hides GUI.")
